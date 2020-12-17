@@ -1,8 +1,7 @@
 package com.renno231.personalshield;
 
-import com.renno231.personalshield.proxy.ClientProxy;
 import com.renno231.personalshield.proxy.CommonProxy;
-import com.renno231.personalshield.util.reference;
+import com.renno231.personalshield.util.Reference;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -13,15 +12,15 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
 
 
-@Mod(modid = reference.MOD_ID,name = reference.NAME, version = reference.VERSION)
-public class main {
+@Mod(modid = Reference.MOD_ID,name = Reference.NAME, version = Reference.VERSION)
+public class PersonalShield {
 
     public static Logger logger;
 
     @Instance
-    public static main instance;
+    public static PersonalShield instance;
 
-    @SidedProxy(clientSide = reference.CLIENT_PROXY_CLASS, serverSide = reference.COMMON_PROXY_CLASS)
+    @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.COMMON_PROXY_CLASS)
     public static CommonProxy proxy;
     //public static ClientProxy clientProxy = new ClientProxy();
 

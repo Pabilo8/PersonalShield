@@ -1,6 +1,6 @@
 package com.renno231.personalshield.util;
 
-public class reference {
+public class Reference {
 
     public static final String MOD_ID = "ps";
     public static final String NAME = "Personal Shield";
